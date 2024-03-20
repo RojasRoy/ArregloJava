@@ -1,0 +1,27 @@
+/*Ejercicio 1: Leer 5 números, guardarlos en un 
+arreglo y mostrarlos en el mismo orden que ingresaron.
+*/
+package practica;
+
+import java.util.Scanner;
+
+public class Practica {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        int arreglo[] = new int[5];
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.print((i +1) + " - ingrese un número: ");
+            arreglo[i] = Integer.parseInt(teclado.nextLine());
+        }
+        
+        System.out.println("-------------");
+        System.out.println("mostramos el arreglo");
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.println("el arreglo en la posición " + i + " es: [" + arreglo[i] + "]");
+        }
+    }
+}
